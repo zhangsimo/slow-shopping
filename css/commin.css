@@ -1,0 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+.part {
+  min-width: 320px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ccc;
+}
