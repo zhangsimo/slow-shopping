@@ -8,7 +8,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="./css/commin.css">
     <link rel="stylesheet" href="./lib/bootstrap框架/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/price.css">
 </head>
 
 <body>
@@ -29,40 +29,14 @@
                     <button type="button" class="btn">搜索</button>
                 </form>
             </div>
-
-            <!-- 中间隔断 -->
-            <div class="separate"></div>
-            <!-- 导航图片 -->
-            <div class="mm_nav">
-                <ul class="clearfix mm_nav_img">
-                   
-                 
+            <!-- 比价 -->
+            <div class="price_nav">
+                <ul class="nav">
+                    
                 </ul>
             </div>
-            <!-- 推荐 -->
-            <div class="rec">
-                <span>超值折扣推荐</span>
-                <a href="#"><img src="./images/more.png" alt=""></a>
-            </div>
-            <!-- 商品 -->
-            <div class="product">
-                <ul class="product_img">
-                   
-                </ul>
-            </div>
-            <!-- 更多商品 -->
-            <div class="move">
-                <button type="button">更多优惠信息 <i class="glyphicon glyphicon-new-window"></i></button>
-            </div>
-
-            <!-- 品牌排行 -->
-            <div class="rec">
-                    <span>品牌排行</span>
-                    <a href="#"><img src="./images/more.png" alt=""></a>
-            </div>
+        
         </div>
-
-
         <!-- 底部 -->
         <div class="foot">
             <ul class="clearfix">
@@ -79,32 +53,24 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/Template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/price.js"></script>
     <script type="text/html" id="tml">
-        {{each result v i }}
-        <li data-id="{{v.indexmenuId}}">
-                <a>{{@v.img}}</a>
-                <p>{{v.name}}</p>
-            </li>
-        {{/each}}    
+        {{each result v i}}
+        <li>
+                <a  data-id={{v.titleId}}>{{v.title}}<i class="glyphicon glyphicon-menu-down pull-right"></i></a>
+                <div class="price_lis">
+                    <ul class="clearfix lis">
+                        
+                    </ul>
+                </div>
+             </li>
+    {{/each}}
     </script>
 
     <script type="text/html" id="tml2">
-        {{each result v i}}
-        <li class="clearfix">
-                <div class="mm_img pull-left">
-                    {{@v.productImgSm}}
-                </div>
-                <div class="img_title">
-                    <div class="top">
-                        <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
-                    </div>
-                    <div class="bottom">
-                        <p>京东商城| {{v.productTime}}</p>
-                    </div>
-                </div>
-            </li>
-        {{/each}}    
+    {{each result v i}}
+    <li class="nav-lis" data-id={{v.categoryId}}>{{v.category}}</li>
+    {{/each}}
     </script>
 </body>
 

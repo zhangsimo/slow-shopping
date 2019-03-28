@@ -1,0 +1,184 @@
+html,
+body {
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+html {
+  font-size: 75px;
+}
+a {
+  display: block;
+  color: #000;
+}
+a:hover,
+a:active,
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+.part {
+  min-width: 320px;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  height: 1000px;
+}
+.heard {
+  max-width: 750px;
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  background-color: #ff841d;
+  padding: 0 0.2rem /* 15/75 */;
+  box-sizing: border-box;
+}
+.heard .heard_right {
+  float: right;
+  width: 1rem /* 100/75 */;
+  height: 100%;
+  padding-top: 0.16667rem /* 5/75 */;
+}
+.heard .heard_right img {
+  width: 0.906667rem /* 68/75 */;
+}
+.heard .heard_left {
+  overflow: hidden;
+  /* 200/75 */
+  height: 100%;
+  text-align: center;
+}
+.heard .heard_left a {
+  font-size: 0.506667rem /* 38/75 */;
+  margin-top: 0.406667rem /* 20/75 */;
+  color: #fff;
+}
+.heard .heard_left h3 {
+  height: 100%;
+  margin: 0;
+  line-height: 1.433333rem;
+  font-size: 0.506667rem /* 38/75 */;
+  color: #fff;
+}
+.foot {
+  margin-top: 0.333333rem /* 25/75 */;
+}
+.foot ul {
+  padding: 0;
+}
+.foot ul li {
+  float: left;
+  width: 33.33%;
+  height: 0.88rem /* 66/75 */;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+}
+.foot ul li a {
+  font-size: 0.346667rem /* 26/75 */;
+  color: #000;
+}
+.foot ul li a:hover {
+  text-decoration: none;
+  color: blue;
+}
+.foot .foot_title {
+  margin-top: 0.33333rem /* 25/75 */;
+  text-align: center;
+}
+.foot .foot_title p:nth-child(1) {
+  font-size: 0.32rem /* 24/75 */;
+  color: #5e6261;
+}
+.foot .foot_title p:nth-child(2) {
+  font-size: 0.213333rem /* 16/75 */;
+}
+.foot .foot_title a {
+  display: inline-block;
+  color: #000;
+}
+.foot .foot_title a span {
+  color: red;
+}
+.product1 ul {
+  padding: 0;
+}
+.product1 li {
+  height: 3.4rem /* 255/75 */;
+  width: 100%;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e5e5e5;
+}
+.product1 li .mm_img {
+  width: 3.066667rem /* 230/75 */;
+  height: 100%;
+  line-height: 3.4rem;
+  text-align: center;
+}
+.product1 li .mm_img img {
+  width: 2.133333rem /* 160/75 */;
+  height: 2.133333rem /* 160/75 */;
+}
+.product1 li .img_title {
+  height: 100%;
+  overflow: hidden;
+}
+.product1 li .img_title .top {
+  height: 2.2rem /* 165/75 */;
+  width: 100%;
+  padding-top: 0.466667rem /* 35/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  padding-right: 0.133333rem /* 10/75 */;
+}
+.product1 li .img_title .top .span {
+  color: red;
+}
+.product1 li .img_title .bottom {
+  margin-top: 0.3rem /* 15/75 */;
+  color: #9ba0a6;
+  font-size: 0.32rem /* 24/75 */;
+}
+.product1 li .img_title .bottom img {
+  width: 0.4rem /* 30/75 */;
+}
+.paging {
+  height: 1rem /* 75/75 */;
+}
+.paging ul {
+  padding: 0;
+}
+.paging li {
+  float: left;
+  width: 33.33%;
+  height: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.346667rem /* 26/75 */;
+}
+.paging li .reb {
+  position: relative;
+}
+.paging li select {
+  width: 2rem /* 150/75 */;
+  height: 0.933333rem /* 70/75 */;
+  appearance: none;
+  padding-left: 0.466667rem /* 20/75 */;
+}
+.paging li .jin {
+  position: absolute;
+  top: 0.026667rem /* 2/75 */;
+  right: 0.626667rem /* 47/75 */;
+  height: 0.933333rem;
+  width: 0.4rem /* 30/75 */;
+  background-color: #e1e1e1;
+  border: 1px solid #777;
+}
+.paging .btn {
+  width: 2.133333rem /* 160/75 */;
+  height: 0.866667rem /* 65/75 */;
+  border: 0.026667rem /* 2/75 */ solid #666;
+  border-radius: 0.133333rem /* 10/75 */;
+  font-size: 0.346667rem /* 26/75 */;
+}

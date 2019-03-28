@@ -1,0 +1,117 @@
+.search {
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  line-height: 1.333333rem /* 100/75 */;
+  text-align: center;
+}
+.search input {
+  width: 7.6rem /* 570/75 */;
+  height: 0.8rem /* 60/75 */;
+  background-color: #f1f1f1;
+  border-radius: 0.8rem /* 10/75 */;
+  padding-left: 0.333333rem /* 25/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  border: none;
+}
+.search .btn {
+  height: .8rem;
+  width: 1.666667rem /* 125/75 */;
+  margin-left: 0.133333rem /* 10/75 */;
+  border-radius: .8rem;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: 0.48rem /* 36/75 */;
+  margin-bottom: 0.133333rem /* 10/75 */;
+}
+.separate {
+  height: 0.266667rem /* 20/75 */;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.mm_nav {
+  width: 100%;
+  padding-top: 0.633333rem /* 10/75 */;
+  padding-bottom: 0.2rem /* 15/75 */;
+  height: 4.933333rem /* 340/75 */;
+  overflow: hidden;
+}
+.mm_nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.32rem /* 24/75 */;
+}
+.mm_nav ul li img {
+  width: 1.333333rem /* 100/75 */;
+  margin: 0.133333rem /* 10/75 */ 0;
+}
+.heigh {
+  height: 7.533333rem /* 505/75 */;
+}
+.rec {
+  height: 0.933333rem /* 70/75 */;
+  line-height: .933333rem;
+  width: 100%;
+  background: linear-gradient(#ffaf47, #ff9000);
+  padding: 0 0.2rem /* 15/75 */;
+}
+.rec span {
+  float: left;
+  font-size: 0.453333rem /* 34/75 */;
+  color: #fff;
+}
+.rec a {
+  float: right;
+}
+.rec a img {
+  width: 0.533333rem /* 40/75 */;
+}
+.product ul {
+  padding: 0;
+}
+.product li {
+  height: 3.4rem /* 255/75 */;
+  width: 100%;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e5e5e5;
+}
+.product li .mm_img {
+  width: 3.066667rem /* 230/75 */;
+  height: 100%;
+  line-height: 3.4rem;
+  text-align: center;
+}
+.product li .mm_img img {
+  width: 2.133333rem /* 160/75 */;
+  height: 2.133333rem /* 160/75 */;
+}
+.product li .img_title {
+  height: 100%;
+  overflow: hidden;
+}
+.product li .img_title .top {
+  height: 2.2rem /* 165/75 */;
+  width: 100%;
+  padding-top: 0.466667rem /* 35/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  padding-right: 0.133333rem /* 10/75 */;
+}
+.product li .img_title .top span {
+  color: orange;
+}
+.product li .img_title .bottom {
+  color: #9ba0a6;
+  font-size: 0.32rem /* 24/75 */;
+}
+.move {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.266667rem /* 20/75 */;
+}
+.move button {
+  width: 80%;
+  height: 0.8rem /* 60/75 */;
+  border: 1px solid #f1f1f1;
+  border-radius: 0.073333rem /* 10/75 */;
+  background-color: #fff;
+}

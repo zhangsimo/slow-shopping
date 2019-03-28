@@ -8,7 +8,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="./css/commin.css">
     <link rel="stylesheet" href="./lib/bootstrap框架/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/goods.css">
 </head>
 
 <body>
@@ -30,38 +30,43 @@
                 </form>
             </div>
 
-            <!-- 中间隔断 -->
-            <div class="separate"></div>
-            <!-- 导航图片 -->
-            <div class="mm_nav">
-                <ul class="clearfix mm_nav_img">
-                   
-                 
+            <!-- 面包屑导航 -->
+            <div class="nav">
+                <ul class="clearfix nav_list">
+
                 </ul>
-            </div>
-            <!-- 推荐 -->
-            <div class="rec">
-                <span>超值折扣推荐</span>
-                <a href="#"><img src="./images/more.png" alt=""></a>
+                <button class="btn">筛选</button>
             </div>
             <!-- 商品 -->
-            <div class="product">
+            <div class="product1">
                 <ul class="product_img">
+                    <!-- 商品内容 -->
                    
                 </ul>
             </div>
-            <!-- 更多商品 -->
-            <div class="move">
-                <button type="button">更多优惠信息 <i class="glyphicon glyphicon-new-window"></i></button>
-            </div>
 
-            <!-- 品牌排行 -->
-            <div class="rec">
-                    <span>品牌排行</span>
-                    <a href="#"><img src="./images/more.png" alt=""></a>
+            <!-- 分页 -->
+            <div class="paging">
+                <ul>
+                    <li>
+                        <button type="button" class="btn btn-up">上一页</button>
+                    </li>
+                    <li>
+                        <div class="reb">
+                            <select name="" id="selet">
+                                <!-- 分页 -->
+                               
+                            </select>
+                            <div class="jin"> <i class="glyphicon glyphicon-menu-down"></i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-down">下一页</button>
+
+                    </li>
+                </ul>
             </div>
         </div>
-
 
         <!-- 底部 -->
         <div class="foot">
@@ -79,33 +84,39 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/Template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/goods.js"></script>
     <script type="text/html" id="tml">
         {{each result v i }}
-        <li data-id="{{v.indexmenuId}}">
-                <a>{{@v.img}}</a>
-                <p>{{v.name}}</p>
-            </li>
+        <li><a href="index.html">首页<i class="glyphicon glyphicon-menu-right"></i></a></li>
+        <li><a href="price.html">全部分类<i class="glyphicon glyphicon-menu-right"></i></a></li>
+        <li><a href="#">{{v.category}}<i class="glyphicon glyphicon-menu-right"></i></a></li>
         {{/each}}    
     </script>
-
-    <script type="text/html" id="tml2">
+    <script type="text/html" id="tml2"> 
         {{each result v i}}
-        <li class="clearfix">
+        <li class="clearfix" data-id={{v.categoryId}} data-name={{v.productName}} data-product={{v.productId}}>
                 <div class="mm_img pull-left">
-                    {{@v.productImgSm}}
+                    {{@v.productImg}}
                 </div>
                 <div class="img_title">
                     <div class="top">
-                        <p>{{v.productName}}<span>{{v.productPinkage}}</span></p>
+                        <p>{{v.productName}}</p>
+                        <p class='span'>{{v.productPrice}}</p>
                     </div>
                     <div class="bottom">
-                        <p>京东商城| {{v.productTime}}</p>
+                        <p>{{v.productQuote}} &nbsp {{v.productCom}}</p>
                     </div>
                 </div>
             </li>
-        {{/each}}    
+        {{/each}}
     </script>
+    <script type="text/html" id="tml3">
+        {{each arr v i}}
+    <option  data-id='{{i}}' value="{{i+1}}" class="otp">{{v}}</option>
+        {{/each}}
+    </script>
+
+
 </body>
 
 </html>

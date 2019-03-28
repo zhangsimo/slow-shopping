@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+   <link rel="stylesheet" href="./lib/bootstrap框架/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/save.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="part">
+        <div class="heard clearfix">
+            <a href="#" class="heard_right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+            <div class="heard_left">
+                <a class="glyphicon glyphicon-menu-left pull-left" href="javascript:history.back(-1)"></a>
+                <h3>省钱控-最新优惠</h3>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <div class="main">
+           
+
+            <!-- 面包屑导航 -->
+         
+            <!-- 商品 -->
+            <div class="product1">
+                <ul class="product_img">
+                    <!-- 商品内容 -->
+                   
+                </ul>
+            </div>
+
+            <!-- 分页 -->
+            <div class="paging">
+                <ul>
+                    <li>
+                        <button type="button" class="btn btn-up">上一页</button>
+                    </li>
+                    <li>
+                        <div class="reb">
+                            <select name="" id="selet">
+                                <!-- 分页 -->
+                               
+                            </select>
+                            <div class="jin"> <i class="glyphicon glyphicon-menu-down"></i></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-down">下一页</button>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="foot">
+            <ul class="clearfix">
+                <li><a>登录</a></li>
+                <li><a>注册</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-arrow-up"></i> 返回顶部</a></li>
+            </ul>
+            <div class="foot_title">
+                <p><a href="#"><span>手机APP下载</span> 慢慢买手机版</a> --掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/save.js"></script>
+    
+    <script type="text/html" id="tml2"> 
+        {{each result v i}}
+        <li class="clearfix" data-id={{v.productId}} >
+                <div class="mm_img pull-left">
+                    {{@v.productImgSm}}
+                </div>
+                <div class="img_title">
+                    <div class="top">
+                        <p>{{v.productName}}</p>
+                        <p class='span'>{{v.productPinkage}}</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="clearfix">{{v.productFrom}} &nbsp {{v.productTime}} 
+                            <span class="pull-right">
+                            <i><img src="./images/comment.svg" alt=""></i>
+                            {{v.productComCount}}
+                        </span></p>
+                    </div>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="tml3">
+        {{each arr v i}}
+    <option  data-id='{{i}}' value="{{i+1}}" class="otp">{{v}}</option>
+        {{/each}}
+    </script>
+
+
+</body>
+
+</html>

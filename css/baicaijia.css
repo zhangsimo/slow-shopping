@@ -31,25 +31,36 @@ a:link {
   max-width: 750px;
   height: 1.333333rem /* 100/75 */;
   width: 100%;
-  background-color: #ff841d;
+  background-color: #f4483e;
   padding: 0 0.2rem /* 15/75 */;
   box-sizing: border-box;
-}
-.heard .heard_left {
-  float: left;
-  width: 5.266667rem /* 200/75 */;
-  height: 100%;
-  background: url("../images/header_logo.png") no-repeat center center;
-  background-size: 5.013333rem /* 376/75 */;
 }
 .heard .heard_right {
   float: right;
   width: 1rem /* 100/75 */;
   height: 100%;
-  padding-top: 0.066667rem /* 5/75 */;
+  padding-top: 0.16667rem /* 5/75 */;
 }
 .heard .heard_right img {
   width: 0.906667rem /* 68/75 */;
+}
+.heard .heard_left {
+  overflow: hidden;
+  /* 200/75 */
+  height: 100%;
+  text-align: center;
+}
+.heard .heard_left a {
+  font-size: 0.506667rem /* 38/75 */;
+  margin-top: 0.406667rem /* 20/75 */;
+  color: #fff;
+}
+.heard .heard_left h3 {
+  height: 100%;
+  margin: 0;
+  line-height: 1.433333rem;
+  font-size: 0.506667rem /* 38/75 */;
+  color: #fff;
 }
 .foot {
   margin-top: 0.333333rem /* 25/75 */;
