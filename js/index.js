@@ -39,5 +39,29 @@ $(function(){
         location.href='inland.html'
         
     })
+    $('.mm_nav_img').on('click','[data-id = 3]' ,function(){
+        location.href='baicaijia.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 4]' ,function(){
+        location.href='save.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 5]' ,function(){
+        location.href='coupon.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 6]' ,function(){
+        location.href='price.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 9]' ,function(){
+        location.href='price.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 10]' ,function(){
+        location.href='sitenav.html'
+        
+    })
 
 })

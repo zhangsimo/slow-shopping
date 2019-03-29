@@ -26,6 +26,7 @@ a:link {
   width: 100%;
   margin: 0 auto;
   height: 1000px;
+  background-color: #f8f8f8;
 }
 .heard {
   max-width: 750px;
@@ -101,4 +102,142 @@ a:link {
 }
 .foot .foot_title a span {
   color: red;
+}
+.nav {
+  padding: 0 0.133333rem /* 10/75 */;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.nav ul li {
+  float: left;
+  padding: 0 0.306667rem /* 23/75 */;
+  height: 1.066667rem /* 80/75 */;
+  text-align: center;
+  line-height: 1rem;
+}
+.nav ul li a {
+  font-size: 0.4rem /* 30/75 */;
+}
+.nav ul li .active {
+  color: red;
+  border-bottom: 0.053333rem /* 4/75 */ solid red;
+  box-sizing: border-box;
+}
+.nav ul li a:hover {
+  color: red;
+  border-bottom: 0.053333rem /* 4/75 */ solid red;
+  box-sizing: border-box;
+}
+.nav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1rem /* 75/75 */;
+  height: 1.066667rem /* 80/75 */;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  border-left: 0.026667rem /* 2/75 */ solid #e4e4e4;
+}
+.main {
+  width: 100%;
+}
+.main .one {
+  margin-top: 0.2rem /* 15/75 */;
+  width: 100%;
+  height: 4rem /* 300/75 */;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main .one img {
+  float: left;
+  width: 3.4rem /* 255/75 */;
+  height: 4rem /* 300/75 */ /* 260/75 */;
+}
+.main .one .right {
+  overflow: hidden;
+  height: 100%;
+  padding-left: 0.066667rem /* 5/75 */;
+}
+.main .one .right .a {
+  font-size: 0.346667rem /* 26/75 */;
+}
+.main .one .right .c {
+  font-size: 0.453333rem /* 34/75 */;
+  color: red;
+}
+.main .one .right .c i {
+  font-size: 0.426667rem /* 32/75 */;
+  color: red;
+  font-style: normal;
+}
+.main .one .right .c em {
+  font-style: normal;
+  font-size: 0.266667rem /* 20/75 */;
+  color: red;
+  margin: 0 0.073333rem /* 10/75 */;
+}
+.main .one .right .c del {
+  font-style: normal;
+  font-size: 0.266667rem /* 20/75 */;
+  color: #666;
+  margin-left: 0.066667rem /* 5/75 */;
+}
+.main .one .right .bar {
+  margin-bottom: 0.7rem /* 15/75 */;
+}
+.main .one .right .bar i {
+  float: left;
+  width: 2.2rem /* 165/75 */;
+  height: 0.373333rem /* 28/75 */;
+  box-sizing: border-box;
+  background-color: #ffb7b7;
+  border-radius: 0.133333rem /* 10/75 */;
+  border: 0.026667rem /* 2/75 */ solid #fc3338;
+  position: relative;
+}
+.main .one .right .bar i em {
+  display: block;
+  height: 100%;
+  background-color: #fc3338;
+  border-radius: 0.106667rem /* 8/75 */;
+}
+.main .one .right .bar i span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  color: #fff;
+}
+.main .one .right .bar b {
+  font-size: 0.32rem /* 24/75 */;
+  color: #fc3338;
+  margin-left: 0.133333rem /* 10/75 */;
+  font-weight: 400;
+}
+.main .one .right a:nth-child(4) {
+  font-size: 0.32rem /* 24/75 */;
+  float: left;
+  color: #e33c47;
+  width: 2.866667rem /* 215/75 */;
+  height: 0.666667rem /* 50/75 */;
+  border: 0.026667rem /* 2/75 */ dashed #e33c47;
+  line-height: .666667rem;
+  text-align: center;
+}
+.main .one .right [isconvert="1"] {
+  font-size: 0.32rem /* 24/75 */;
+  float: right;
+  color: #fff;
+  background-color: #e33c47;
+  width: 1.533333rem /* 115/75 */;
+  height: 0.733333rem /* 55/75 */;
+  line-height: .733333rem;
+  text-align: center;
+  border-radius: 0.066667rem /* 5/75 */;
 }

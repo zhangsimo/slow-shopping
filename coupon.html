@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>慢慢买</title>
     <link rel="stylesheet" href="./lib/bootstrap框架/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/baicaijia.css">
+    <link rel="stylesheet" href="./css/coupon.css">
 </head>
 
 <body>
@@ -19,21 +19,16 @@
             </a>
             <div class="heard_left">
                 <a class="glyphicon glyphicon-menu-left pull-left" href="javascript:history.back(-1)"></a>
-                <h3>白菜价-淘宝内部券</h3>
+                <h3>优惠券</h3>
             </div>
         </div>
-        <!-- 导航栏 -->
-        <div class="nav">
-            <ul class="clearfix nav_ul">
-                <!-- 导航模块 -->
-            </ul>
-        </div>
-        <!-- 主体 -->
+       <!-- 主体 -->
+       <div class="main">
+     
 
-        <div class="main">
+       </div>
 
-
-        </div>
+        
         <!-- 底部 -->
         <div class="foot">
             <ul class="clearfix">
@@ -48,36 +43,18 @@
         </div>
     </div>
     <script src="./lib/jquery/jquery.min.js"></script>
-    <script src="./lib/IScroll/iscroll.js"></script>
     <script src="./lib/Template/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/baicaijia.js"></script>
-
+    <script src="./js/coupon.js"></script>
     <script type="text/html" id="tml">
-        {{each result v i}}
-        <li data-id={{v.titleId}} class="lis"><a>{{v.title}}</a></li>
-        {{/each}}
+    {{each result v i}}
+    <div class="one" data-id='{{v.couponId}}'>
+            <img src="{{v.couponImg}}" alt="">
+            <p>{{v.couponTitle}}</p>
+    </div>
+    {{/each}}  
+    
     </script>
-
-    <script type="text/html" id="tml2">
-        {{each result v i}}
-        <div class="one">
-        {{@v.productImg}} 
-        <div class='right'>
-            <p class='a'>
-                {{@v.productName}}
-            </p>
-            <p class='c'>
-                {{@v.productPrice}}
-            </p>
-        {{@v.productCouponRemain}}
-        {{@v.productCoupon}}
-        {{@v.productHref}}
-        </div>
-        </div>
-        {{/each}}
-    </script>
-
 </body>
 
 </html>
