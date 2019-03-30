@@ -55,12 +55,20 @@ $(function(){
         location.href='price.html'
         
     })
+    $('.mm_nav_img').on('click','[data-id = 8]' ,function(){
+        location.href='gsproduct.html'
+        
+    })
     $('.mm_nav_img').on('click','[data-id = 9]' ,function(){
         location.href='price.html'
         
     })
     $('.mm_nav_img').on('click','[data-id = 10]' ,function(){
         location.href='sitenav.html'
+        
+    })
+    $('.mm_nav_img').on('click','[data-id = 11]' ,function(){
+        location.href='brandTitle.html'
         
     })
 

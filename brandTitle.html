@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./css/commin.css">
+    <link rel="stylesheet" href="./lib/bootstrap框架/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/brandTitle.css">
+</head>
+
+<body>
+    <div class="part">
+        <!-- 头部 -->
+        <div class="heard">
+            <div class="heard_left"></div>
+            <a href="#" class="heard_right">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+
+        <!-- 主体 -->
+        <div class="main">
+            <!-- 搜索 -->
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="请输入你想比价的商品">
+                    <button type="button" class="btn">搜索</button>
+                </form>
+            </div>
+            <!-- 面包屑导航 -->
+            <div class="nav_title">
+                <ul class="clearfix nav_list">
+                    <li><a href="index.html">首页<i class="glyphicon glyphicon-menu-right"></i></a></li>
+                    <li><a href="price.html">全部分类<i class="glyphicon glyphicon-menu-right"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- 排行 -->
+            <div class="ranking">
+                <p>热门品牌排行</p>
+            </div>
+
+
+            <!-- 比价 -->
+            <div class="price_nav">
+                <ul class="nav">
+
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <!-- 底部 -->
+        <div class="foot">
+            <ul class="clearfix">
+                <li><a>登录</a></li>
+                <li><a>注册</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-arrow-up"></i> 返回顶部</a></li>
+            </ul>
+            <div class="foot_title">
+                <p><a href="#"><span>手机APP下载</span> 慢慢买手机版</a> --掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/brandTitle.js"></script>
+    <script type="text/html" id="tml">
+        {{each result v i}}
+        <li>
+                <a  data-id={{v.brandTitleId}}>{{v.brandTitle}}<i class="glyphicon glyphicon-menu-down pull-right"></i></a>
+                <div class="price_lis">
+                    <ul class="clearfix lis">
+                        
+                    </ul>
+                </div>
+             </li>
+    {{/each}}
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.search {
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  line-height: 1.333333rem /* 100/75 */;
+  text-align: center;
+}
+.search input {
+  width: 7.6rem /* 570/75 */;
+  height: 0.8rem /* 60/75 */;
+  background-color: #f1f1f1;
+  border-radius: 0.8rem /* 10/75 */;
+  padding-left: 0.333333rem /* 25/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  border: none;
+}
+.search .btn {
+  height: .8rem;
+  width: 1.666667rem /* 125/75 */;
+  margin-left: 0.133333rem /* 10/75 */;
+  border-radius: .8rem;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: 0.48rem /* 36/75 */;
+  margin-bottom: 0.133333rem /* 10/75 */;
+}
+.price_nav .nav {
+  background-color: #ededed;
+}
+.price_nav ul {
+  padding: 0;
+}
+.price_nav a {
+  width: 100%;
+  height: 1.066667rem /* 80/75 */;
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 0.506667rem /* 38/75 */;
+  font-weight: 700;
+  color: #000;
+}
+.price_nav a i {
+  color: #666;
+}
+.price_nav .price_lis {
+  display: none;
+}
+.price_nav .price_lis li {
+  float: left;
+  width: 33.33%;
+  font-size: 0.373333rem /* 28/75 */;
+  text-align: center;
+  line-height: 1.04rem /* 78/75 */;
+  border: 1px solid #000;
+}
+.price_nav .high {
+  height: 6.666667rem /* 500/75 */;
+}
+.nav_title {
+  height: 0.933333rem /* 70/75 */;
+  border-top: 2px solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
+  background-color: #f1f1f1;
+  line-height: .933rem;
+  position: relative;
+  margin-bottom: 0.266667rem /* 20/75 */;
+}
+.nav_title ul {
+  padding: 0 0.133333rem /* 10/75 */;
+}
+.nav_title li {
+  float: left;
+}
+.nav_title li a {
+  color: #000;
+  padding-right: 0.073333rem /* 10/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.ranking {
+  width: 96%;
+  margin: 0 auto;
+  margin-bottom: 0.266667rem /* 20/75 */;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
+.ranking p {
+  border: 0.026667rem /* 2/75 */ solid #c4c4c4;
+  line-height: 1rem /* 75/75 */;
+  font-size: 0.426667rem /* 32/75 */;
+  color: #8c4f14;
+  padding-left: 0.266667rem /* 20/75 */;
+}

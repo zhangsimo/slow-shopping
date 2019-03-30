@@ -1,0 +1,203 @@
+.search {
+  height: 1.333333rem /* 100/75 */;
+  width: 100%;
+  line-height: 1.333333rem /* 100/75 */;
+  text-align: center;
+}
+.search input {
+  width: 7.6rem /* 570/75 */;
+  height: 0.8rem /* 60/75 */;
+  background-color: #f1f1f1;
+  border-radius: 0.8rem /* 10/75 */;
+  padding-left: 0.333333rem /* 25/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  border: none;
+}
+.search .btn {
+  height: .8rem;
+  width: 1.666667rem /* 125/75 */;
+  margin-left: 0.133333rem /* 10/75 */;
+  border-radius: .8rem;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: 0.48rem /* 36/75 */;
+  margin-bottom: 0.133333rem /* 10/75 */;
+}
+.nav_title {
+  height: 0.933333rem /* 70/75 */;
+  border-top: 2px solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
+  background-color: #f1f1f1;
+  line-height: .933rem;
+  position: relative;
+}
+.nav_title ul {
+  padding: 0 0.133333rem /* 10/75 */;
+}
+.nav_title li {
+  float: left;
+}
+.nav_title li a {
+  color: #000;
+  padding-right: 0.073333rem /* 10/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.ranking {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0.266667rem /* 20/75 */;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  border-top: 0.026667rem /* 2/75 */ solid #c4c4c4;
+  border-bottom: 0.026667rem /* 2/75 */ solid #c4c4c4;
+  height: 1rem /* 75/75 */;
+}
+.ranking p {
+  line-height: 1rem /* 75/75 */;
+  font-size: 0.426667rem /* 32/75 */;
+  color: #8c4f14;
+  padding-left: 0.266667rem /* 20/75 */;
+}
+.ranking-1 {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  border-top: 0.026667rem /* 2/75 */ solid #c4c4c4;
+  border-bottom: 0.026667rem /* 2/75 */ solid #c4c4c4;
+  height: 1rem /* 75/75 */;
+}
+.ranking-1 p {
+  line-height: 1rem /* 75/75 */;
+  font-size: 0.426667rem /* 32/75 */;
+  color: #8c4f14;
+  padding-left: 0.266667rem /* 20/75 */;
+  margin-bottom: 0;
+}
+.price_nav .nav {
+  background-color: #ededed;
+}
+.price_nav ul {
+  padding: 0;
+}
+.price_nav a {
+  width: 100%;
+  height: 1.733333rem /* 130/75 */;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #ffffff;
+  color: #000;
+}
+.price_nav a .pull-right {
+  width: 0.533333rem /* 40/75 */;
+  height: 100%;
+  line-height: 1.733333rem;
+}
+.price_nav a i {
+  color: #666;
+  font-size: 0.506667rem /* 38/75 */;
+}
+.price_nav a .left {
+  overflow: hidden;
+}
+.price_nav a .left h5 {
+  font-size: 0.453333rem /* 34/75 */;
+  font-weight: 400;
+}
+.price_nav a .left h5 span {
+  float: left;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  background-color: #c9c9c9;
+  color: #fff;
+  text-align: center;
+  line-height: 0.533333rem /* 40/75 */;
+  margin-right: 0.3rem /* 30/75 */;
+}
+.price_nav a .left p {
+  font-size: 0.346667rem /* 26/75 */;
+  color: #898386;
+  padding-left: 0.8rem /* 60/75 */;
+}
+.product1 ul {
+  padding: 0;
+}
+.product1 .chanpin {
+  height: 3.4rem /* 255/75 */;
+  width: 100%;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e5e5e5;
+}
+.product1 .chanpin .mm_img {
+  width: 3.066667rem /* 230/75 */;
+  height: 100%;
+  line-height: 3.4rem;
+  text-align: center;
+}
+.product1 .chanpin .mm_img img {
+  width: 2.133333rem /* 160/75 */;
+  height: 2.133333rem /* 160/75 */;
+}
+.product1 .chanpin .img_title {
+  height: 100%;
+  overflow: hidden;
+}
+.product1 .chanpin .img_title .top {
+  height: 2.2rem /* 165/75 */;
+  width: 100%;
+  padding-top: 0.466667rem /* 35/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  padding-right: 0.133333rem /* 10/75 */;
+}
+.product1 .chanpin .img_title .top .span {
+  color: red;
+}
+.product1 .chanpin .img_title .top .span .pull-right {
+  color: orange;
+}
+.product1 .chanpin .img_title .bottom {
+  margin-top: 0.3rem /* 15/75 */;
+  color: #9ba0a6;
+  font-size: 0.32rem /* 24/75 */;
+}
+.lis {
+  width: 100%;
+}
+.lis .top {
+  height: 3rem /* 225/75 */;
+}
+.lis .top .top-left {
+  width: 3.2rem /* 240/75 */;
+  height: 100%;
+  line-height: 3rem;
+  text-align: center;
+}
+.lis .top .top-left img {
+  width: 2.666667rem /* 200/75 */;
+  height: 1.8rem /* 135/75 */;
+}
+.lis .top .top-right {
+  padding-top: 0.4rem /* 30/75 */;
+}
+.lis .top .top-right p {
+  font-size: 0.373333rem /* 28/75 */;
+  color: #ad8e9e;
+}
+.lis .bottom {
+  width: 95%;
+  border: 0.026667rem /* 2/75 */ solid #000;
+  margin: 0 auto;
+  padding: 0.266667rem /* 20/75 */ 0.133333rem /* 10/75 */;
+}
+.lis .bottom .tit {
+  font-size: 0.4rem /* 30/75 */;
+}
+.lis .bottom span {
+  font-size: 0.32rem /* 24/75 */;
+  color: #276245;
+}
+.lis .bottom .b {
+  color: #9a9da7;
+}
+.price_lis {
+  display: none;
+}
