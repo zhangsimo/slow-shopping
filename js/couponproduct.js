@@ -1,5 +1,8 @@
 $(function(){
     var id = location.search.split('=')[1]
+    var txt= location.search.split('=')[2]
+        txt= decodeURI(txt)
+    $('.title_name').text(txt)    
     
     $.ajax({
         url:'http://127.0.0.1:9090/api/getcouponproduct',

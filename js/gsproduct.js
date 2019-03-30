@@ -25,24 +25,24 @@ $(function(){
     })
     $('.hb').on('click','a',function(){
         var txt = $(this).text()+"<span class='trigon'>▼</span>"
-        $(this).parent().parent().parent().find('button').text(txt);
+        $(this).parent().parent().parent().find('button').html(txt);
         areaid = $(this).data('id')
         render(shopid ,areaid )
         
     })
 
-    $('.dropdown ').on('click',function(){
-        console.log($(this)[0]);
+    // $('.dropdown ').on('click',function(){
+    //     console.log($(this)[0]);
         
-        if ($(this).hasClass('open')) {
-            console.log(123);
+    //     if ($(this).hasClass('open')) {
+    //         console.log(123);
             
-        }else{
-            console.log(456);
+    //     }else{
+    //         console.log(456);
             
-        }
+    //     }
         
-    })
+    // })
 
     render(shopid ,areaid )
     function render(shopid ,areaid ){

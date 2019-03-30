@@ -15,9 +15,10 @@ function render(){
 $('.nav').on('click','a',function(){
    
     var id = $(this).data('id')
-    console.log(id);
+    var txt = $(this).text().split("十")[0]
     
-    location.href='brand.html?id='+id
+    
+    location.href='brand.html?id='+id+"="+txt
     
 })
 

@@ -112,7 +112,7 @@ a:link {
 }
 .main .nav .dropdown .dropdown-menu {
   padding: 0;
-  width: 345%;
+  width: 335%;
   border-right: none;
   border-left: none;
 }
@@ -123,6 +123,9 @@ a:link {
 .main .nav .dropdown .dropdown-menu li a {
   height: 0.973333rem /* 73/75 */;
   line-height: 0.973333rem /* 73/75 */;
+}
+.main .nav .dropdown .dropdown-menu li:hover a {
+  color: red;
 }
 .main .nav .dropdown .hb {
   left: -246px;

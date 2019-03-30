@@ -9,7 +9,9 @@ $(function(){
 
     $('.main').on('click','.one',function(){
         var id = $(this).data('id')
-        location.href="couponproduct.html?="+id
+        var txt = $(this).find('p').text()
+        
+        location.href="couponproduct.html?="+id+"="+txt
         
     })
 })

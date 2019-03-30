@@ -1,6 +1,10 @@
 $(function(){
     var id = location.search.split('=')[1],
+        txt= location.search.split('=')[2],
+        txt =decodeURI(txt)
         num = 4
+        
+      $('.ranking span').text(txt)  
     render1(id)
     function render1(id){
         $.ajax({
