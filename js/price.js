@@ -20,7 +20,7 @@ $(function(){
             },
             success: function(res){
                $(that).next().children().html(template('tml2',res))
-               $(that).next().slideToggle()
+               $(that).next().stop().slideToggle()
                
             }
         })
