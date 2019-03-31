@@ -31,18 +31,15 @@ $(function(){
         
     })
 
-    // $('.dropdown ').on('click',function(){
-    //     console.log($(this)[0]);
-        
-    //     if ($(this).hasClass('open')) {
-    //         console.log(123);
+    $('.dropdown ').on('click',function(){
+        if ($(this).hasClass('open')) {
+            $(this).find('span').html('▼')
             
-    //     }else{
-    //         console.log(456);
-            
-    //     }
+        }else{
+            $(this).find('span').html('▲')
+        }
         
-    // })
+    })
 
     render(shopid ,areaid )
     function render(shopid ,areaid ){
