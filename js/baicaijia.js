@@ -21,7 +21,8 @@ $(function(){
             $(".nav_ul").children(":first").children().addClass("active")
             $('.nav_ul').on('click',".lis",function(){
                  id = $(this).data('id')
-            $(".nav_ul").children(":first").children().removeClass("active")
+            $(".nav_ul").children().children().removeClass("active")
+            $(this).children().addClass('active')
                  render(id)
             })
             
